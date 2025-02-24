@@ -1,0 +1,285 @@
+.header {
+
+    position: fixed;
+
+    max-height: 80px;
+    min-height: 70px;
+
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .5);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .garibaldino {
+    position: relative;
+
+    flex: 1;
+    height: 70px;
+
+    background-image: url(../images/scrittagaribaldino.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    content: '';
+    z-index: 3;
+}
+
+.header a {
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.header img.back {
+    max-width: 40px;
+    max-height: 40px;
+
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.viewlogo {
+    position: relative;
+    top: 70px;
+    min-height: 270px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gray {
+    color: gray;
+}
+
+.title1 {
+    font-size: 150px;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.viewlogo .content {
+    width: 100%;
+
+    min-height: 900px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewlogo .content h1 {
+    margin-top: 25px;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 70px;
+
+    width: 100%;
+    min-height: 80px;
+
+    z-index: 100;
+
+    display: flex;
+}
+
+.navbar .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .nav div {
+    max-width: 250px;
+    flex: 1;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar .nav div:hover {
+    max-width: 250px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, .5);
+    height: 100%;
+
+    cursor: pointer;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: .5s;
+}
+
+.navbar .nav div a {
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    top: 0;
+}
+
+
+
+.main .menu-content {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .menu-content .title {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
+}
+
+.main .menu-content .title .item-title {
+    text-transform: uppercase;
+    font-size: 100px;
+
+    font-family: Garibaldino;
+    letter-spacing: 15px;
+}
+
+.main .menu-content .objects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 15px;
+}
+
+.main .menu-content .objects .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+.main .menu-content .objects .item .header-item {
+    display: flex;
+    flex: 1;
+
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+
+    width: 60%;
+}
+
+.main .menu-content .objects .item .header-item .separator {
+    flex: 1;
+    border-bottom: 2px dotted rgba(255, 255, 255, .5);
+
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.main .menu-content .objects .item .header-item .title-item {
+    font-size: 26px;
+
+}
+
+.main .menu-content .objects .item .info-item {
+    min-height: 50px;
+    content: '';
+}
+
+@media screen and (max-width: 1440px) {
+    .navbar .nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+    }
+
+
+    .navbar .nav div {
+        max-width: none;
+        width: 100%;
+        max-height: 80px;
+
+        background-color: rgba(0, 0, 0, .5);
+
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .navbar .nav div:hover {
+        max-width: none;
+        width: 100%;
+        max-height: 80px;
+        background-color: rgba(255, 255, 255, .5);
+
+        cursor: pointer;
+        color: black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: .5s;
+    }
+
+    .navbar .nav div a {
+        text-decoration: none;
+        font-size: 26px;
+    }
+
+
+
+
+}
