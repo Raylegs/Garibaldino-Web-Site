@@ -48,7 +48,7 @@ input {
 
 
 body {
-    min-width: 1600px;
+    width: 100%;
     background-color: black;
 }
 
@@ -133,7 +133,6 @@ body {
 
 .viewlogo .content {
     width: 100%;
-    min-width: 1600px;
     min-height: 1600px;
 
     display: flex;
@@ -153,9 +152,6 @@ body {
 
     width: 100%;
     min-height: 80px;
-    min-width: 1600px;
-
-    overflow-x: scroll;
 
     z-index: 100;
 
@@ -163,21 +159,51 @@ body {
 }
 
 .navbar .nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
     position: relative;
+
     display: flex;
     flex-direction: row;
-
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
 }
 
+.navbar .nav::-webkit-scrollbar {
+    max-height: 6px;
+}
+
+.navbar .nav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+.navbar .nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(left,
+            #2ab0ed 0%,
+            #bfe8f9 25%,
+            #9fd8ef 50%,
+            #e4f5fc 60%,
+            #bfe8f9 75%,
+            #9fd8ef 80%,
+            #2ab0ed 100%);
+}
+
 .navbar .nav div {
+
     max-width: 250px;
     flex: 1;
     background-color: rgba(0, 0, 0, .5);
     height: 100%;
     cursor: pointer;
+    padding: 0px 25px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,16 +270,8 @@ body {
 
 .main .menu-content .title .item-title {
     text-transform: uppercase;
-    font-size: 70px;
 
     font-family: Garibaldino;
-    letter-spacing: 15px;
-}
-
-.main .menu-content .title .item-subtitle{
-    font-size: 42px;
-
-    letter-spacing: 15px;
 }
 
 .main .menu-content .objects {
@@ -305,3 +323,30 @@ body {
     min-height: 50px;
     content: '';
 }
+
+
+@media screen and (min-width: 1475px) {
+    .navbar .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 1475px){
+    .main .menu-content .item-subtitle{
+        font-size: 42px;
+    }   
+
+    .main .menu-content .title .item-title{
+        font-size: 80px;
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .main .menu-content .item-subtitle{
+        font-size: 12px;
+    }
+}
+
