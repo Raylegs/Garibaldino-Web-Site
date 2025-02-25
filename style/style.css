@@ -215,13 +215,12 @@ body {
         align-items: center;
         justify-content: center;
     
-        position: fixed;
-        bottom: 0;
+        position: relative;
     
         width: 100%;
         padding: 5px;
     
-        margin-bottom: 50px;
+        margin-top: 70px;
     }
     
     .footer .info {
@@ -249,6 +248,18 @@ body {
         margin-bottom: 15px;
     
         font-size: 24px;
+    }
+
+    .main .logo .interaction {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+        min-height: 100px;
+        max-height: 200px;
+    
+        max-width: 300px;
     }
     
 

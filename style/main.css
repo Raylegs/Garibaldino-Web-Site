@@ -66,7 +66,7 @@ body {
 
     width: 100%;
     z-index: 5;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: black;
 
     display: flex;
     flex-direction: row;
@@ -199,7 +199,7 @@ body {
 
     max-width: 250px;
     flex: 1;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: black;
     height: 100%;
     cursor: pointer;
     padding: 0px 25px;
@@ -258,6 +258,10 @@ body {
     align-items: center;
 }
 
+.main .menu-content:last-child{
+    margin-bottom: 150px;
+}
+
 .main .menu-content .title {
     width: 100%;
 
@@ -304,7 +308,7 @@ body {
     justify-content: stretch;
     align-items: center;
 
-    width: 60%;
+    width: 80%;
 }
 
 .main .menu-content .objects .item .header-item .separator {
@@ -327,7 +331,7 @@ body {
     margin-top: 5px;
     min-height: 50px;
     content: '';
-    width: 60%;
+    width: 75%;
 }
 
 
@@ -353,6 +357,52 @@ body {
 @media screen and (max-width: 1475px) {
     .main .menu-content .item-subtitle{
         font-size: 12px;
+    }
+
+    .header img.back {
+        max-width: 30px;
+        max-height: 30px;
+
+        min-width: 5px;
+        min-height: 5px;
+    
+        margin-left: 15px;
+        margin-top: 5px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+
+    .header .garibaldino {
+        position: relative;
+    
+        height: 70px;
+        width: 90%;
+    
+        background-image: url(../images/scrittagaribaldino.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    
+        content: '';
+        z-index: 3;
+
+        margin-left: 10%;
+    }
+
+    .header {
+        position: fixed;
+    
+        max-height: 80px;
+        min-height: 70px;
+    
+        width: 100%;
+        z-index: 5;
+        background-color: black;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
     }
 }
 
