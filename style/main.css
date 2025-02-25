@@ -242,7 +242,8 @@ body {
 
 .main {
     position: relative;
-    top: 0;
+    top: 0px;
+
 }
 
 
@@ -315,13 +316,18 @@ body {
 }
 
 .main .menu-content .objects .item .header-item .title-item {
-    font-size: 26px;
-
+    font-size: 24px;
+    max-width: 80%;
 }
 
 .main .menu-content .objects .item .info-item {
+
+    font-size: 16px;
+
+    margin-top: 5px;
     min-height: 50px;
     content: '';
+    width: 60%;
 }
 
 
