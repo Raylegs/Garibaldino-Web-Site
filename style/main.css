@@ -1,3 +1,62 @@
+@font-face {
+    font-family: Garibaldino;
+    src: url("../fonts/FontsFree-Net-Art-nuvo.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    color: white;
+
+    font-family: Gotham-Black, sans-serif;
+}
+
+
+.neonTextBlue {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 60, 255),
+        0 0 82px rgb(0, 60, 255),
+        0 0 92px rgb(0, 60, 255),
+        0 0 102px rgb(0, 60, 255),
+        0 0 151px rgb(0, 60, 255);
+}
+
+
+.neonBox {
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 30px;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem rgb(0, 60, 255),
+        0 0 0.8rem rgb(0, 60, 255),
+        0 0 2.8rem rgb(0, 60, 255),
+        inset 0 0 1.3rem rgb(0, 60, 255);
+}
+
+input {
+    padding: 2px;
+    margin: 2px;
+
+    color: black;
+}
+
+
+body {
+    min-width: 1600px;
+    background-color: black;
+}
+
+.background-body {
+    background-color: black;
+}
+
+
 .header {
 
     position: fixed;
@@ -74,8 +133,8 @@
 
 .viewlogo .content {
     width: 100%;
-
-    min-height: 900px;
+    min-width: 1600px;
+    min-height: 1600px;
 
     display: flex;
     flex-direction: column;
@@ -94,6 +153,9 @@
 
     width: 100%;
     min-height: 80px;
+    min-width: 1600px;
+
+    overflow-x: scroll;
 
     z-index: 100;
 
@@ -141,6 +203,14 @@
 }
 
 .navbar .nav div a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
 }
 
@@ -152,7 +222,7 @@
 
 
 .main .menu-content {
-
+    margin-top: 150px;
     width: 100%;
 
     display: flex;
@@ -174,9 +244,15 @@
 
 .main .menu-content .title .item-title {
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 70px;
 
     font-family: Garibaldino;
+    letter-spacing: 15px;
+}
+
+.main .menu-content .title .item-subtitle{
+    font-size: 42px;
+
     letter-spacing: 15px;
 }
 
@@ -228,58 +304,4 @@
 .main .menu-content .objects .item .info-item {
     min-height: 50px;
     content: '';
-}
-
-@media screen and (max-width: 1440px) {
-    .navbar .nav {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-        justify-content: space-between;
-        align-items: stretch;
-        width: 100%;
-    }
-
-
-    .navbar .nav div {
-        max-width: none;
-        width: 100%;
-        max-height: 80px;
-
-        background-color: rgba(0, 0, 0, .5);
-
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .navbar .nav div:hover {
-        max-width: none;
-        width: 100%;
-        max-height: 80px;
-        background-color: rgba(255, 255, 255, .5);
-
-        cursor: pointer;
-        color: black;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        transition: .5s;
-    }
-
-    .navbar .nav div a {
-        text-decoration: none;
-        font-size: 26px;
-    }
-
-
-
-
 }

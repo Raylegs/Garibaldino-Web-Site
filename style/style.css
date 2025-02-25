@@ -46,6 +46,7 @@ input {
 }
 
 body {
+    min-width: 1600px;
     background-color: black;
 }
 
@@ -243,6 +244,12 @@ body {
         left: 70%;
 
         margin-right: 35px;
+    }
+
+    .main .logo .info {
+        margin-bottom: 15px;
+    
+        font-size: 24px;
     }
     
 
