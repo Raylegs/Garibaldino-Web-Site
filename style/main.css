@@ -116,7 +116,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .gray {
@@ -137,12 +137,14 @@ body {
 
 .viewlogo .content {
     width: 90%;
-    min-height: 900px;
+    min-height: 730px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
+    padding-top: 150px;
 }
 
 .viewlogo .content h1 {
@@ -388,8 +390,6 @@ body {
     
         content: '';
         z-index: 3;
-
-        margin-left: 10%;
     }
 
     .header {
@@ -410,6 +410,18 @@ body {
 
     .title1 {
         font-size: 120px;
+    }
+
+    .viewlogo .content {
+        width: 90%;
+        min-height: 620px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        padding-top: 100px;
     }
 
 }
