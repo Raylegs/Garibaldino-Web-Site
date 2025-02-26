@@ -74,6 +74,26 @@ body {
     align-items: center;
 }
 
+.header a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    flex: 1;
+    height: 70px;
+    width: 100%;
+
+    content: '';
+    z-index: 3;
+    width: 100%;
+    height: 70px;
+
+    content: '';
+}
+
 .header .garibaldino {
     position: relative;
 
@@ -88,6 +108,8 @@ body {
     content: '';
     z-index: 3;
 }
+
+
 
 .header a {
     min-width: 40px;
