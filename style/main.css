@@ -26,8 +26,7 @@
         0 0 151px rgb(0, 60, 255);
 }
 
-
-.neonBox {
+.neonBoxBlue {
     border: 0.2rem solid #fff;
     border-radius: 2rem;
     padding: 30px;
@@ -38,6 +37,57 @@
         0 0 2.8rem rgb(0, 60, 255),
         inset 0 0 1.3rem rgb(0, 60, 255);
 }
+
+.neonTextGreen {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 255, 0),
+        0 0 82px rgb(0, 255, 0),
+        0 0 92px rgb(0, 255, 0),
+        0 0 102px rgb(0, 255, 0),
+        0 0 151px rgb(0, 255, 0);
+}
+
+.neonBoxGreen{
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 30px;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem rgb(0, 255, 0),
+        0 0 0.8rem rgb(0, 255, 0),
+        0 0 2.8rem rgb(0, 255, 0),
+        inset 0 0 1.3rem rgb(0, 255, 0);
+}
+
+.neonTextRed {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 0, 0),
+        0 0 82px rgb(255, 0, 0),
+        0 0 92px rgb(255, 0, 0),
+        0 0 102px rgb(255, 0, 0),
+        0 0 151px rgb(255, 0, 0);
+}
+
+.neonBoxRed{
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 30px;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem rgb(255, 0, 0),
+        0 0 0.8rem rgb(255, 0, 0),
+        0 0 2.8rem rgb(255, 0, 0),
+        inset 0 0 1.3rem rgb(255, 0, 0);
+}
+
 
 input {
     padding: 2px;
