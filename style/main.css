@@ -147,7 +147,7 @@ body {
 .header .garibaldino {
     position: relative;
 
-    flex: 1;
+    flex: 40;
     height: 70px;
 
     background-image: url(../images/scrittagaribaldino.png);
@@ -162,6 +162,7 @@ body {
 
 
 .header a {
+    flex: 1;
     min-width: 40px;
     min-height: 40px;
 }
@@ -179,6 +180,14 @@ body {
     border: 3px solid white;
 }
 
+.header p{
+  color: white;
+  font-size: 40px;
+}
+.header-item{
+  font-size: 30px;
+  margin-left: 40px;
+}
 .viewlogo {
     position: relative;
     top: 70px;
@@ -423,7 +432,7 @@ body {
 @media screen and (min-width: 1475px){
     .main .menu-content .item-subtitle{
         font-size: 42px;
-    }   
+    }
 
     .main .menu-content .title .item-title{
         font-size: 80px;
@@ -442,7 +451,7 @@ body {
 
         min-width: 5px;
         min-height: 5px;
-    
+
         margin-left: 15px;
         margin-top: 5px;
         border-radius: 100%;
@@ -451,29 +460,29 @@ body {
 
     .header .garibaldino {
         position: relative;
-    
+
         height: 70px;
         width: 90%;
-    
+
         background-image: url(../images/scrittagaribaldino.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-    
+
         content: '';
         z-index: 3;
     }
 
     .header {
         position: fixed;
-    
+
         max-height: 80px;
         min-height: 70px;
-    
+
         width: 100%;
         z-index: 5;
         background-color: black;
-    
+
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -487,7 +496,7 @@ body {
     .viewlogo .content {
         width: 90%;
         min-height: 620px;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -495,6 +504,7 @@ body {
 
         padding-top: 100px;
     }
-
+    .header-item{
+      font-size: 20px;
+    }
 }
-
