@@ -424,6 +424,7 @@ body {
 @media screen and (min-width: 1475px) {
     .navbar .nav::-webkit-scrollbar {
         display: none;
+        top: 10px; 
     }
 
 
