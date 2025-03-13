@@ -410,6 +410,7 @@ body {
     max-width: 80%;
 }
 
+
 .main .menu-content .objects .item .info-item {
 
     font-size: 16px;
@@ -507,5 +508,8 @@ body {
     }
     .header-item{
       font-size: 20px;
+    }
+    .main .menu-content .objects .item .header-item .vino{
+      font-size: 16px;
     }
 }
