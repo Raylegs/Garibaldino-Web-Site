@@ -446,6 +446,12 @@ body {
     .main .menu-content .item-subtitle{
         font-size: 12px;
     }
+    .main .menu-content{
+      margin: 50px;
+    }
+    .main .menu-content .title{
+      margin: 25px;
+    }
 
     .header img.back {
         max-width: 30px;
