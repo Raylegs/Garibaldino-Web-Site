@@ -208,9 +208,6 @@ body {
     font-size: 150px;
 }
 
-.title3 {
-    font-size: 24px;
-}
 
 .capitalize {
     text-transform: uppercase;
@@ -443,6 +440,7 @@ body {
 }
 
 @media screen and (max-width: 1475px) {
+
     .main .menu-content .item-subtitle{
         font-size: 12px;
     }
@@ -498,7 +496,7 @@ body {
     }
 
     .title1 {
-        font-size: 120px;
+        font-size: 30px;
     }
 
     .viewlogo .content {
@@ -507,10 +505,11 @@ body {
 
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
+        padding-top: 0;
+        margin-bottom: 80px;
 
-        padding-top: 50px;
     }
     .header-item{
       font-size: 20px;
