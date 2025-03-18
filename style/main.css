@@ -225,9 +225,7 @@ body {
     padding-top: 150px;
 }
 
-.viewlogo .content h1 {
-    margin-top: 25px;
-}
+
 
 
 .navbar {
@@ -501,7 +499,7 @@ body {
 
     .viewlogo .content {
         width: 90%;
-        min-height: 550px;
+        min-height: 500px;
 
         display: flex;
         flex-direction: column;
