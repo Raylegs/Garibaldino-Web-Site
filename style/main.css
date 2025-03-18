@@ -503,7 +503,7 @@ body {
 
     .viewlogo .content {
         width: 90%;
-        min-height: 600px;
+        min-height: 550px;
 
         display: flex;
         flex-direction: column;
