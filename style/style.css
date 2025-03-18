@@ -46,12 +46,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .main .logo .content {
     display: flex;
     flex: 1;
+}
+.main .logo .content img{
+  width: 700px;
 }
 
 .main .logo .info {
