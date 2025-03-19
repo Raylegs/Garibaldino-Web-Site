@@ -2,7 +2,10 @@
     font-family: Garibaldino;
     src: url("../fonts/FontsFree-Net-Art-nuvo.ttf");
 }
-
+@font-face {
+  font-family: Neon;
+  src: url("../fonts/NEON GLOW.otf");
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -205,7 +208,9 @@ body {
 }
 
 .title1 {
+    font-family: Neon;
     font-size: 150px;
+    font-weight: lighter;
 }
 
 
@@ -511,6 +516,7 @@ body {
     }
     .header-item{
       font-size: 20px;
+      margin: 0;
     }
     .main .menu-content .objects .item .header-item .vino{
       font-size: 16px;
