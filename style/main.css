@@ -386,6 +386,27 @@ body {
     margin-top: 15px;
 }
 
+.main .menu-content .objects .itemimgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 15px;
+}
+.main .menu-content .objects .itemimgs img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 15px;
+}
+
 .main .menu-content .objects .item .header-item {
     display: flex;
     flex: 1;
